@@ -11,7 +11,7 @@ namespace SarthakGupta_BookStore
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            PageAdapter.CurrentPage = "Default";
+
 
         }
 
