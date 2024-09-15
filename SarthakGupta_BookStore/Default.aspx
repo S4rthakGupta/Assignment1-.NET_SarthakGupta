@@ -10,6 +10,11 @@
     <link href="Content/site.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.9.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
+    <style type="text/css">
+        .btn {
+            width: 124px;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
