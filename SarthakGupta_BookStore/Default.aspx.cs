@@ -22,17 +22,4 @@ namespace SarthakGupta_BookStore
 
 
         }
-
-        //5- Clear all the items that user selected in Card/lstCart
-        protected void btnEmpty_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        //6- will continue working on it later
-        protected void btnCheckOut_Click(object sender, EventArgs e)
-        {
-
-        }
     }
