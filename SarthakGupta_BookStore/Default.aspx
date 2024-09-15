@@ -12,7 +12,7 @@
     <script src="Scripts/bootstrap.min.js"></script>
     <style type="text/css">
         .btn {
-            width: 124px;
+            width: 125px;
         }
     </style>
 </head>
