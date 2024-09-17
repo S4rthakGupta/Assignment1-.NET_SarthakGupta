@@ -11,7 +11,7 @@ namespace SarthakGupta_BookStore
 {
 
 
-    public partial class Default
+    public partial class Products
     {
 
         /// <summary>
@@ -24,48 +24,39 @@ namespace SarthakGupta_BookStore
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// ShoppingCartListBox control.
+        /// productSelect control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ShoppingCartListBox;
+        protected global::System.Web.UI.WebControls.DropDownList productSelect;
 
         /// <summary>
-        /// RemoveItemButton control.
+        /// quantityInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button RemoveItemButton;
+        protected global::System.Web.UI.WebControls.TextBox quantityInput;
 
         /// <summary>
-        /// EmptyCartButton control.
+        /// addToCartButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button EmptyCartButton;
+        protected global::System.Web.UI.WebControls.Button addToCartButton;
 
         /// <summary>
-        /// ContinueShoppingButton control.
+        /// goToCartButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ContinueShoppingButton;
-
-        /// <summary>
-        /// CheckOutButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CheckOutButton;
+        protected global::System.Web.UI.WebControls.Button goToCartButton;
     }
 }
