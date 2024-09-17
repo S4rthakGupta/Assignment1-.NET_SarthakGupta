@@ -55,7 +55,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <img src="flying-bats.jpg" alt="Flying Bats" class="img-fluid rounded" />
+                                    <img src="Images/prideandprejudice.jpg" alt="Pride and Prejudice" class="img-fluid rounded" />
                                 </div>
                             </div>
                         </div>

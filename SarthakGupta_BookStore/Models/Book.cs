@@ -16,4 +16,6 @@ public class Book
     public int GenreID { get; set; }
 
     public decimal Price { get; set;}
+
+    public string ImageFile { get; set; }
 }
