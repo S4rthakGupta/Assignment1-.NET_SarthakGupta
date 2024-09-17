@@ -174,9 +174,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Mandar_bookstore_277.mdf" />
-    <Content Include="App_Data\Mandar_bookstore_277_log.ldf">
-      <DependentUpon>Mandar_bookstore_277.mdf</DependentUpon>
+    <Content Include="App_Data\SarthakGupta_BookStore.mdf" />
+    <Content Include="App_Data\SarthakGupta_BookStore_log.ldf">
+      <DependentUpon>SarthakGupta_BookStore.mdf</DependentUpon>
     </Content>
     <Content Include="Checkout.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -185,6 +185,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\style.css" />
     <Content Include="Cart.aspx" />
+    <Content Include="DB_Scripts\Image Queries.sql" />
+    <Content Include="DB_Scripts\SQL_Queries.sql" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Default.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -196,6 +198,8 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\dune.jpg" />
+    <Content Include="Images\prideandprejudice.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />

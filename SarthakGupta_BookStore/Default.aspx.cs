@@ -28,7 +28,7 @@ namespace SarthakGupta_BookStore
             lblShortDescription.Text = selectedProduct.Author;
             lblLongDescription.Text = selectedProduct.PublicationYear.ToString();
             lblUnitPrice.Text = selectedProduct.Price.ToString("c") + " each";
-            //imgProduct.ImageUrl = selectedProduct.ImageFile;
+            imgProduct.ImageUrl = selectedProduct.ImageFile;
 
         }
 
@@ -61,7 +61,7 @@ namespace SarthakGupta_BookStore
 
             p.Price = (decimal)row["Price"];
 
-            //p.ImageFile = "~/Images/Products/" + row["ImageFile"].ToString();
+            p.ImageFile = "~/Images/" + row["ImageFile"].ToString();
 
             return p;
             //--------------------------------------------------------- 
