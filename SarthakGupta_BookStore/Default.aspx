@@ -29,22 +29,28 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="productSelect">Please select a product:</label>
-                                        <asp:DropDownList ID="productSelect" runat="server" CssClass="form-control">
-                                            <asp:ListItem Value="Flying Bats" Text="Flying Bats" />
+                                        <asp:DropDownList ID="ddlBooks" DataSourceID="SqlDataSource1" DataTextField="Title" AutoPostBack="True" DataValueField="BookID" runat="server" CssClass="form-control">
                                         </asp:DropDownList>
+                                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString_bookstore %>" ProviderName="<%$ ConnectionStrings:ConnectionString_bookstore.ProviderName %>" SelectCommand="SELECT [BookID], [Title], [Author], [PublicationYear], [Price] FROM [Book_80277] ORDER BY [PublicationYear]"></asp:SqlDataSource>
                                     </div>
                                     <div class="product-details">
-                                        <h4 id="productName">Flying Bats</h4>
-                                        <p>Bats flying in front of moon</p>
-                                        <p>Bats flying in front of a full moon make for an eerie spectacle.</p>
-                                        <p><strong>$69.99 each</strong></p>
                                         <div class="form-group">
-                                            <label for="quantityInput">Quantity:</label>
-                                            <asp:TextBox ID="quantityInput" runat="server" CssClass="form-control" />
+                                            <div class="col-sm-12">
+                                                <h4>
+                                                    <asp:Label ID="lblName" runat="server"></asp:Label></h4>
+                                            </div>
                                         </div>
-                                        <div class="btn-group" role="group">
-                                            <asp:Button ID="addToCartButton" runat="server" Text="Add to Cart" CssClass="btn btn-primary" />
-                                            <asp:Button ID="goToCartButton" runat="server" Text="Go to Cart" CssClass="btn btn-secondary" />
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <asp:Label ID="lblShortDescription" runat="server"></asp:Label></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <asp:Label ID="lblLongDescription" runat="server"></asp:Label></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <asp:Label ID="lblUnitPrice" runat="server"></asp:Label></div>
                                         </div>
                                     </div>
                                 </div>
