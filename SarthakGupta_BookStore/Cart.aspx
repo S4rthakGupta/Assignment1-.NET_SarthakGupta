@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="SarthakGupta_BookStore.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="SarthakGupta_BookStore.Cart" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,16 +22,17 @@
                     </asp:ListBox>
                 </div>
                 <div class="col-md-4">
-                    <asp:Button ID="RemoveItemButton" runat="server" Text="Remove Item" CssClass="btn btn-danger mb-2 btn-block" />
-                    <asp:Button ID="EmptyCartButton" runat="server" Text="Empty Cart" CssClass="btn btn-warning mb-2 btn-block" />
+                    <asp:Button ID="RemoveItemButton" OnClick="btnRemove_Click" runat="server" Text="Remove Item" CssClass="btn btn-danger mb-2 btn-block" />
+                    <asp:Button ID="EmptyCartButton" OnClick="EmptyCartButton_Click" runat="server" Text="Empty Cart" CssClass="btn btn-warning mb-2 btn-block" />
                 </div>
             </div>
             <div class="row mt-3">
+                <asp:Label ID="lblMessage" runat="server" EnableViewState="False" CssClass="text-info col-sm-12"></asp:Label>
                 <div class="col-md-6">
-                    <asp:Button ID="ContinueShoppingButton" runat="server" Text="Continue Shopping" CssClass="btn btn-primary btn-block" />
+                    <asp:Button ID="ContinueShoppingButton" PostBackUrl="~/Default.aspx" runat="server" Text="Continue Shopping" CssClass="btn btn-primary btn-block" />
                 </div>
                 <div class="col-md-6">
-                    <asp:Button ID="CheckOutButton" runat="server" Text="Check Out" CssClass="btn btn-success btn-block" />
+                    <asp:Button ID="CheckOutButton" runat="server" PostBackUrl="~/Checkout.aspx" Text="Check Out" CssClass="btn btn-success btn-block" />
                 </div>
             </div>
         </div>

@@ -5,10 +5,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Menu;
 
 namespace SarthakGupta_BookStore
 {
-    public partial class Products : System.Web.UI.Page
+    public partial class Default : System.Web.UI.Page
     {
         private Book selectedProduct;
         protected void Page_Load(object sender, EventArgs e)
@@ -66,5 +67,43 @@ namespace SarthakGupta_BookStore
             return p;
             //--------------------------------------------------------- 
         }
+
+
+        protected void AddBtn_Click(object sender, EventArgs e)
+        {
+            if (IsValid)
+            {
+                //--------------------------------------------------
+                //get cart from session state and selected item 
+                //from cart
+                //if we don't have it, create Cart in the session
+                //retrun it as list 
+                CartList cart = CartList.GetCartOrCreateIt(); //CartItemList.GetCart();
+                //--------------------------------------------------
+                //find this item in the cart that we have it in session
+                Item cartItem = cart[selectedProduct.BookID.ToString()];
+                //--------------------------------------------------
+                //if item isn't in cart, add it; 
+                //otherwise, increase its quantity
+                if (cartItem == null)
+                {
+                    //add the product to the cart
+                    cart.AddItem(selectedProduct,
+                                 Convert.ToInt32(Quantity.Text));
+                }
+                else
+                {
+                    //update the quantity
+                    cartItem.AddQuantity(
+                        Convert.ToInt32(Quantity.Text));
+                }
+                //go to Cart page
+                Response.Redirect("~/Cart.aspx");
+            }
+
+        }
+
+
     }
+
 }

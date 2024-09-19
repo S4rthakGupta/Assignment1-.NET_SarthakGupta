@@ -198,8 +198,30 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\becoming.jpg" />
+    <Content Include="Images\biglittlelies.jpg" />
+    <Content Include="Images\birdbox.jpg" />
+    <Content Include="Images\davincicode.jpg" />
+    <Content Include="Images\dracula.jpg" />
     <Content Include="Images\dune.jpg" />
+    <Content Include="Images\educated.jpg" />
+    <Content Include="Images\gameofthrones.jpg" />
+    <Content Include="Images\girlwiththedragontattoo.jpg" />
+    <Content Include="Images\gonegirl.jpg" />
+    <Content Include="Images\hauntingofhillhouse.jpg" />
+    <Content Include="Images\henriettalacks.jpg" />
+    <Content Include="Images\lefthandofdarkness.jpg" />
+    <Content Include="Images\mebeforeyou.jpg" />
+    <Content Include="Images\mistborn.jpg" />
+    <Content Include="Images\nameofthewind.jpg" />
+    <Content Include="Images\nueromancer.jpg" />
+    <Content Include="Images\outlander.jpg" />
     <Content Include="Images\prideandprejudice.jpg" />
+    <Content Include="Images\sapiens.jpg" />
+    <Content Include="Images\snowcrash.jpg" />
+    <Content Include="Images\thehobbit.jpg" />
+    <Content Include="Images\thenotebook.jpg" />
+    <Content Include="Images\theshining.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -229,6 +251,8 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\CartList.cs" />
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

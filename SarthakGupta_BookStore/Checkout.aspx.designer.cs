@@ -11,7 +11,7 @@ namespace SarthakGupta_BookStore
 {
 
 
-    public partial class Cart
+    public partial class Checkout
     {
 
         /// <summary>

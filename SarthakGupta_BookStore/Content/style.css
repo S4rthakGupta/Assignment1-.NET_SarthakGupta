@@ -124,6 +124,12 @@ a {
         text-decoration: underline;
     }
 
+.product-image {
+    height: 45vh;
+}
+
+
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .container {

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SarthakGupta_BookStore.Products" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SarthakGupta_BookStore.Default" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Product Selection</title>
     <!-- Bootstrap CSS -->
+    <link href="Content/style.css" rel="stylesheet" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
@@ -55,7 +56,25 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <asp:Image ID="imgProduct" runat="server" />
+                                    <asp:Image ID="imgProduct" runat="server" CssClass="product-image" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <asp:Textbox ID="Quantity" runat="server"></asp:Textbox>
+
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="text-danger"
+                                        runat="server" ControlToValidate="Quantity" Display="Dynamic" 
+                                        ErrorMessage="Quantity is a required field."></asp:RequiredFieldValidator>
+                                        <asp:RangeValidator ID="RangeValidator1" runat="server" CssClass="text-danger" 
+                                        ControlToValidate="Quantity" Display="Dynamic" 
+                                        ErrorMessage="Quantity must range from 1 to 500."
+                                        MaximumValue="500" MinimumValue="1" Type="Integer">
+                                    </asp:RangeValidator>
+
+                                    <asp:Button ID="AddBtn" runat="server" Text="Add to Cart" CssClass="CartBtn" OnClick="AddBtn_Click" />
+                                    <asp:Button ID="CartBtn" runat="server" Text="Go to the Cart" 
+                                      PostBackUrl="~/Cart.aspx" CausesValidation="False" CssClass="btn" />
                                 </div>
                             </div>
                         </div>
