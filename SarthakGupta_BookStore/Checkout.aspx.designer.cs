@@ -87,13 +87,13 @@ namespace SarthakGupta_BookStore
         protected global::System.Web.UI.WebControls.TextBox CityTextBox;
 
         /// <summary>
-        /// StateDropDown control.
+        /// StateTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList StateDropDown;
+        protected global::System.Web.UI.WebControls.TextBox StateTextBox;
 
         /// <summary>
         /// ZipCodeTextBox control.

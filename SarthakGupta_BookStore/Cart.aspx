@@ -4,35 +4,47 @@
 <html lang="en">
 <head runat="server">
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Shopping Cart</title>
+
     <!-- Bootstrap CSS -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <link href="Content/style.css"="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
 </head>
 <body>
+    <div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow">
+                <img src="Images/banner.jpg" class="card-img-top" alt="Banner Image">
+            </div>
+        </div>
+    </div>
+</div>
+
     <form id="form1" runat="server">
         <div class="container mt-5">
-            <h2>Your shopping cart</h2>
+            <h2>Your Shopping Cart</h2>
             <div class="row">
                 <div class="col-md-8">
                     <asp:ListBox ID="ShoppingCartListBox" runat="server" CssClass="form-control" Height="150px">
-
                     </asp:ListBox>
                 </div>
                 <div class="col-md-4">
-                    <asp:Button ID="RemoveItemButton" OnClick="btnRemove_Click" runat="server" Text="Remove Item" CssClass="btn btn-danger mb-2 btn-block" />
-                    <asp:Button ID="EmptyCartButton" OnClick="EmptyCartButton_Click" runat="server" Text="Empty Cart" CssClass="btn btn-warning mb-2 btn-block" />
+                    <asp:Button ID="RemoveItemButton" OnClick="btnRemove_Click" runat="server" Text="Remove Item" CssClass="remove-btn mb-2 btn-block" />
+                    <asp:Button ID="EmptyCartButton" OnClick="EmptyCartButton_Click" runat="server" Text="Empty Cart" CssClass="empty-btn mb-2 btn-block" />
                 </div>
             </div>
+
             <div class="row mt-3">
                 <asp:Label ID="lblMessage" runat="server" EnableViewState="False" CssClass="text-info col-sm-12"></asp:Label>
                 <div class="col-md-6">
-                    <asp:Button ID="ContinueShoppingButton" PostBackUrl="~/Default.aspx" runat="server" Text="Continue Shopping" CssClass="btn btn-primary btn-block" />
+                    <asp:Button ID="ContinueShoppingButton" PostBackUrl="~/Default.aspx" runat="server" Text="Continue Shopping" CssClass="navy-btn btn-block" />
                 </div>
                 <div class="col-md-6">
-                    <asp:Button ID="CheckOutButton" runat="server" PostBackUrl="~/Checkout.aspx" Text="Check Out" CssClass="btn btn-success btn-block" />
+                    <asp:Button ID="CheckOutButton" runat="server" PostBackUrl="~/Checkout.aspx" Text="Check Out" CssClass="navy-btn btn-block" />
                 </div>
             </div>
         </div>
