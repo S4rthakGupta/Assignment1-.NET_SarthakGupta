@@ -5,28 +5,13 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Check Out Page</title>
-
-    <!-- Bootstrap CSS -->
+    <title>Check Out Page | S4RTHAK Book Store</title>
+    <!-- Adding a link of Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Custom CSS -->
+
+    <!-- Adding a link of the external stylesheet for customization. -->
     <link href="Content/style.css" rel="stylesheet" />
-    <style>
-        .required {
-            color: red;
-        }
 
-        .error {
-            color: red;
-            font-size: 0.9em;
-        }
-
-        .error-list {
-            color: red;
-            font-size: 1em;
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
 <body>
     <div class="container mt-4">
@@ -158,14 +143,14 @@
 
             // Get form fields
             const email = document.getElementById('<%= EmailTextBox.ClientID %>').value;
-        const emailReEntry = document.getElementById('<%= EmailReEntryTextBox.ClientID %>').value;
-        const firstName = document.getElementById('<%= FirstNameTextBox.ClientID %>').value;
-        const lastName = document.getElementById('<%= LastNameTextBox.ClientID %>').value;
-        const phoneNumber = document.getElementById('<%= PhoneNumberTextBox.ClientID %>').value;
-        const address = document.getElementById('<%= AddressTextBox.ClientID %>').value;
-        const city = document.getElementById('<%= CityTextBox.ClientID %>').value;
-        const state = document.getElementById('<%= StateTextBox.ClientID %>').value;
-        const zipCode = document.getElementById('<%= ZipCodeTextBox.ClientID %>').value;
+            const emailReEntry = document.getElementById('<%= EmailReEntryTextBox.ClientID %>').value;
+            const firstName = document.getElementById('<%= FirstNameTextBox.ClientID %>').value;
+            const lastName = document.getElementById('<%= LastNameTextBox.ClientID %>').value;
+            const phoneNumber = document.getElementById('<%= PhoneNumberTextBox.ClientID %>').value;
+            const address = document.getElementById('<%= AddressTextBox.ClientID %>').value;
+            const city = document.getElementById('<%= CityTextBox.ClientID %>').value;
+            const state = document.getElementById('<%= StateTextBox.ClientID %>').value;
+            const zipCode = document.getElementById('<%= ZipCodeTextBox.ClientID %>').value;
 
             // Clear previous errors
             clearErrors();
