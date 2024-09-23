@@ -23,7 +23,7 @@
         </div>
 
         <div class="btn-group-custom">
-            <asp:Button ID="ContinueShoppingButton" runat="server" Text="Continue Shopping" CssClass="navy-btn" PostBackUrl="~/Product.aspx" />
+            <asp:Button ID="ContinueShoppingButton" runat="server" Text="Explore Books" CssClass="products-btn" PostBackUrl="~/Product.aspx" />
         </div>
     </form>
 
