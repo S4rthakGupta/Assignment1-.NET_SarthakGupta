@@ -188,7 +188,7 @@
     <Content Include="DB_Scripts\Image Queries.sql" />
     <Content Include="DB_Scripts\SQL_Queries.sql" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Default.aspx" />
+    <Content Include="Product.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -197,6 +197,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Default.aspx" />
     <Content Include="Images\neuromancer.jpg" />
     <Content Include="Images\order_success.png" />
     <Content Include="OrderConfirmation.aspx" />
@@ -245,6 +246,13 @@
     </Compile>
     <Compile Include="Cart.aspx.designer.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

@@ -18,7 +18,7 @@
     <div class="row">
         <div class="col-12">
             <div class="card shadow">
-                <img src="Images/banner.jpg" class="card-img-top" alt="Banner Image">
+                <img src="Images/banner.jpg" class="card-img-top cart" alt="Banner Image">
             </div>
         </div>
     </div>
@@ -41,7 +41,7 @@
             <div class="row mt-3">
                 <asp:Label ID="lblMessage" runat="server" EnableViewState="False" CssClass="text-info col-sm-12"></asp:Label>
                 <div class="col-md-6">
-                    <asp:Button ID="ContinueShoppingButton" PostBackUrl="~/Default.aspx" runat="server" Text="Continue Shopping" CssClass="navy-btn btn-block" />
+                    <asp:Button ID="ContinueShoppingButton" PostBackUrl="~/Product.aspx" runat="server" Text="Continue Shopping" CssClass="navy-btn btn-block" />
                 </div>
                 <div class="col-md-6">
                     <asp:Button ID="CheckOutButton" runat="server" PostBackUrl="~/Checkout.aspx" Text="Check Out" CssClass="navy-btn btn-block" />

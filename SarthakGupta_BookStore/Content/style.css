@@ -81,6 +81,11 @@ h4 {
     object-fit: cover;
 }
 
+.cart {
+    max-height: 250px;
+    object-fit: cover;
+}
+
 .mt-3 {
     margin-top: 1.5rem;
 }

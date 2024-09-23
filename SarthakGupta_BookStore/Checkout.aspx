@@ -17,12 +17,11 @@
     <div class="row">
         <div class="col-12">
             <div class="card shadow">
-                <img src="Images/banner.jpg" class="card-img-top" alt="Banner Image">
+                <img src="Images/banner.jpg" class="card-img-top cart" alt="Banner Image">
             </div>
         </div>
     </div>
 </div>
-    </div>
 
     <form id="form1" runat="server">
         <div class="container mt-5">
@@ -117,8 +116,8 @@
             <!-- Action Buttons -->
             <div class="btn-group-custom">
                 <asp:Button ID="CheckOutButton" runat="server" Text="Check Out" CssClass="success-btn mr-2" PostBackUrl="~/OrderConfirmation.aspx" />
-                <asp:Button ID="CancelOrderButton" runat="server" Text="Cancel Order" CssClass="cancel-btn mr-2" />
-                <asp:Button ID="ContinueShoppingButton" runat="server" Text="Continue Shopping" CssClass="navy-btn" />
+                <asp:Button ID="CancelOrderButton" runat="server" Text="Cancel Order" CssClass="cancel-btn mr-2" PostBackUrl="~/Cart.aspx" />
+                <asp:Button ID="ContinueShoppingButton" runat="server" Text="Continue Shopping" CssClass="navy-btn" PostBackUrl="~/Product.aspx"/>
             </div>
         </div>
     </form>
