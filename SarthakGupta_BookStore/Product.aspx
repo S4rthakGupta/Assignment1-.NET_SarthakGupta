@@ -5,9 +5,11 @@
 <head runat="server">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Selection</title>
-    <!-- Bootstrap CSS -->
+    <title>Product Selection | S4RTHAK Book Store</title>
+    <!-- Adding a link of Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Adding a link of the external stylesheet for customization. -->
     <link href="Content/style.css" rel="stylesheet" />
 </head>
 <body>
@@ -20,6 +22,7 @@
             </div>
         </div>
 
+        <!-- Main Body starts here! -->
         <div class="container mt-5">
             <div class="row">
                 <div class="col-12">
@@ -57,14 +60,14 @@
                                 <label for="Quantity" class="font-weight-bold">Quantity:</label>
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <asp:Textbox ID="Quantity" runat="server" CssClass="form-control"></asp:Textbox>
+                                        <asp:TextBox ID="Quantity" runat="server" CssClass="form-control"></asp:TextBox>
 
                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="text-danger"
-                                            runat="server" ControlToValidate="Quantity" Display="Dynamic" 
+                                            runat="server" ControlToValidate="Quantity" Display="Dynamic"
                                             ErrorMessage="Quantity is a required field."></asp:RequiredFieldValidator>
 
-                                        <asp:RangeValidator ID="RangeValidator1" runat="server" CssClass="text-danger" 
-                                            ControlToValidate="Quantity" Display="Dynamic" 
+                                        <asp:RangeValidator ID="RangeValidator1" runat="server" CssClass="text-danger"
+                                            ControlToValidate="Quantity" Display="Dynamic"
                                             ErrorMessage="Quantity must range from 1 to 500."
                                             MaximumValue="500" MinimumValue="1" Type="Integer">
                                         </asp:RangeValidator>
@@ -73,7 +76,7 @@
 
                                 <div class="mt-3">
                                     <asp:Button ID="AddBtn" runat="server" Text="Add to Cart" CssClass="navy-btn btn" OnClick="AddBtn_Click" />
-                                    <asp:Button ID="CartBtn" runat="server" Text="Go to the Cart" 
+                                    <asp:Button ID="CartBtn" runat="server" Text="Go to the Cart"
                                         PostBackUrl="~/Cart.aspx" CausesValidation="False" CssClass="navy-btn btn ml-2" />
                                 </div>
                             </div>
@@ -89,4 +92,4 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </form>
 </body>
-</html> 
+</html>
