@@ -5,7 +5,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Shopping Cart</title>
+    <title>Your Shopping Cart | S4RTHAK Book Store</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
@@ -15,22 +15,22 @@
 </head>
 <body>
     <div class="container mt-4">
-    <div class="row">
-        <div class="col-12">
-            <div class="card shadow">
-                <img src="Images/banner.jpg" class="card-img-top cart" alt="Banner Image">
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow">
+                    <img src="Images/banner.jpg" class="card-img-top cart" alt="Banner Image">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
+    <!-- Main Body Starts here!! -->
     <form id="form1" runat="server">
         <div class="container mt-5">
             <h2>Your Shopping Cart</h2>
             <div class="row">
                 <div class="col-md-8">
-                    <asp:ListBox ID="ShoppingCartListBox" runat="server" CssClass="form-control" Height="150px">
-                    </asp:ListBox>
+                    <asp:ListBox ID="ShoppingCartListBox" runat="server" CssClass="form-control" Height="150px"></asp:ListBox>
                 </div>
                 <div class="col-md-4">
                     <asp:Button ID="RemoveItemButton" OnClick="btnRemove_Click" runat="server" Text="Remove Item" CssClass="remove-btn mb-2 btn-block" />
@@ -38,7 +38,7 @@
                 </div>
             </div>
 
-
+            <!-- Adding Buttons for the user to be redirected. -->
             <div class="row mt-3">
                 <asp:Label ID="lblMessage" runat="server" EnableViewState="False" CssClass="text-info col-sm-12"></asp:Label>
                 <div class="col-md-6">
