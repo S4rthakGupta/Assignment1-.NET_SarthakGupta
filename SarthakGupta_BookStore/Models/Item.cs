@@ -21,8 +21,8 @@ public class Item
     /// <summary>
     /// Gets or sets the book associated with the item.
     /// </summary>
-    public Book Book { get; set; }
     public int Quantity { get; set; }
+    public Book Book { get; set; }
 
     public void AddQuantity(int quantity)
     {

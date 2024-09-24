@@ -196,8 +196,8 @@
                 document.getElementById("stateError").innerText = "Invalid state.";
                 valid = false;
             }
-            if (!zipCode.match(/^\d+$/)) {
-                errorMessages.push("Zip code must be numeric.");
+            if (!zipCode.match(/^[a-zA-Z0-9]{6}$/)) {
+                errorMessages.push("Zip code must be 6 alphanumeric characters.");
                 document.getElementById("zipCodeError").innerText = "Invalid zip code.";
                 valid = false;
             }
