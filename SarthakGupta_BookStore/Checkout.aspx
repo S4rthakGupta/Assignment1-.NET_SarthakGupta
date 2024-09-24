@@ -10,7 +10,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Adding a link of the external stylesheet for customization. -->
-    <link href="Content/style.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
 
 </head>
 <body>

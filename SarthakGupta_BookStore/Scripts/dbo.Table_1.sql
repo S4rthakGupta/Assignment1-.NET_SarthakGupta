@@ -1,9 +1,0 @@
-﻿CREATE TABLE Books (
-    BookID INT PRIMARY KEY IDENTITY(1,1),
-    Title NVARCHAR(200) NOT NULL,
-    Author NVARCHAR(150) NOT NULL,
-    Price DECIMAL(10, 2) NOT NULL,
-    PublishedDate DATE,
-    GenreID INT,
-    FOREIGN KEY (GenreID) REFERENCES Genre(GenreID)
-);

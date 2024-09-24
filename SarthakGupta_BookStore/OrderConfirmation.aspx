@@ -10,7 +10,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Adding a link of the external stylesheet for customization. -->
-    <link href="Content/style.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -19,7 +19,7 @@
                 <div class="col-12">
                     <h1>Thank you for your order!</h1>
                     <p class="lead">Your order has been placed successfully. We will notify you once it has been shipped.</p>
-                    <img src="Images/order_success.png" alt="Order Success" class="img-fluid" style="max-width: 400px;" />
+                    <img src="Images/order_success.png" alt="Order Success" class="img-fluid" style="max-width: 400px"; />
                     <div class="mt-4">
                         <!-- This button redirects the user to the products page. -->
                         <asp:Button ID="BackToHomeButton" runat="server" Text="Explore more Books" CssClass="btn btn-primary" PostBackUrl="~/Product.aspx" />

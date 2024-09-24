@@ -14,6 +14,23 @@
     <link href="Content/style.css" rel="stylesheet" />
 </head>
 <body>
+    <!-- Navigation bar as per the instructions. -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="Default.aspx">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="Product.aspx">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="Cart.aspx">Cart</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container mt-4">
         <div class="row">
             <div class="col-12">
