@@ -9,6 +9,8 @@ namespace SarthakGupta_BookStore
 {
     public partial class OrderConfirmation : System.Web.UI.Page
     {
+        private CartList cart;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
