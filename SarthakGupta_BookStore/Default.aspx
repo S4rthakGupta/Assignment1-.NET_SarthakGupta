@@ -29,6 +29,9 @@
                     <li class="nav-item">
                         <a class="nav-link font-weight-bold" href="Cart.aspx">Cart</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="Login.aspx">Cart</a>
+                    </li>
                 </ul>
             </div>
         </nav>
