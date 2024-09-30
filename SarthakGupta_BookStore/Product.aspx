@@ -25,7 +25,7 @@
                                     <label for="productSelect" class="font-weight-bold">Please select a product:</label>
                                     <asp:DropDownList ID="ddlBooks" DataSourceID="SqlDataSource1" DataTextField="Title" AutoPostBack="True" DataValueField="BookID" runat="server" CssClass="form-control">
                                     </asp:DropDownList>
-                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [ImageFile], [Price], [GenreID], [PublicationYear], [Author], [Title], [BookID] FROM [Books] ORDER BY [Price]"></asp:SqlDataSource>
+                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [BookID], [Author], [Title], [PublicationYear], [Price], [ImageFile], [GenreID] FROM [Books] ORDER BY [PublicationYear]"></asp:SqlDataSource>
                                 </div>
                                 <div class="product-details mt-3">
                                     <h4>
