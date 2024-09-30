@@ -1,35 +1,7 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="SarthakGupta_BookStore.Cart" %>
+<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Cart.aspx.cs" Inherits="SarthakGupta_BookStore.Cart" %>
 
-<!DOCTYPE html>
-<html lang="en">
-<head runat="server">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Shopping Cart | S4RTHAK Book Store</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Custom CSS -->
-    <link href="CSS/style.css" rel="stylesheet" />
-</head>
-<body>
-    <!-- Navigation bar as per the instructions. -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link font-weight-bold" href="Default.aspx">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link font-weight-bold" href="Product.aspx">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link font-weight-bold" href="Cart.aspx">Cart</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">  
 
     <div class="container mt-4">
         <div class="row">
@@ -41,9 +13,7 @@
         </div>
     </div>
 
-    <!-- Main Body Starts here!! -->
-    <form id="form1" runat="server">
-        <div class="container mt-5">
+        <div class="container mt-2">
             <h2>Your Shopping Cart</h2>
             <div class="row">
                 <div class="col-md-8">
@@ -66,11 +36,11 @@
                 </div>
             </div>
         </div>
-    </form>
+
 
     <!-- Bootstrap JS and dependencies (jQuery and Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+
+</asp:Content>

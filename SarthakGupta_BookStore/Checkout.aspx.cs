@@ -11,7 +11,16 @@ namespace SarthakGupta_BookStore
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        protected void CheckOutButton_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                // Redirect to the Order Confirmation page
+                Response.Redirect("~/OrderConfirmation.aspx");
+            }
         }
     }
 }

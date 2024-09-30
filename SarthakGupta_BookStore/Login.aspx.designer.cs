@@ -24,39 +24,39 @@ namespace SarthakGupta_BookStore
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// FirstNameTextBox control.
+        /// TxtFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FirstNameTextBox;
+        protected global::System.Web.UI.WebControls.TextBox TxtFirstName;
 
         /// <summary>
-        /// LastNameTextBox control.
+        /// TxtLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LastNameTextBox;
+        protected global::System.Web.UI.WebControls.TextBox TxtLastName;
 
         /// <summary>
-        /// LoginButton control.
+        /// BtnLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LoginButton;
+        protected global::System.Web.UI.WebControls.Button BtnLogin;
 
         /// <summary>
-        /// CancelOrderButton control.
+        /// BtnCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CancelOrderButton;
+        protected global::System.Web.UI.WebControls.Button BtnCancel;
     }
 }

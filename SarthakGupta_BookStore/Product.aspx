@@ -1,51 +1,16 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="SarthakGupta_BookStore.Product" %>
-
-<!DOCTYPE html>
-<html lang="en">
-<head runat="server">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Selection | S4RTHAK Book Store</title>
-    <!-- Adding a link of Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Adding a link of the external stylesheet for customization. -->
-    <link href="CSS/style.css" rel="stylesheet" />
-</head>
-<body>
-    <form id="form1" runat="server">
-        <!-- Navigation bar as per the instructions. -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="Default.aspx">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="Product.aspx">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="Cart.aspx">Cart</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="Login.aspx">Cart</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Product.aspx.cs" Inherits="SarthakGupta_BookStore.Product" %>
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">  
         <!-- This is a basic text under the Navigation Links. -->
         <div class="container mt-4">
             <div class="row">
                 <div class="col-12">
-                    <h1>Welcome to my Book Store.</h1>
+                    <h1>Welcome Back, <span id="SpnWelcomeTxtProducts" runat="server"></span></h1>
                 </div>
             </div>
         </div>
 
         <!-- Main Body starts here! -->
-        <div class="container mt-5">
+        <div class="container mt-3">
             <div class="row">
                 <div class="col-12">
                     <div class="card border-primary shadow">
@@ -112,6 +77,4 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </form>
-</body>
-</html>
+    </asp:Content>

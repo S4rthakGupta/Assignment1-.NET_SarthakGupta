@@ -7,14 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace SarthakGupta_BookStore
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class Site1 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["FirstName"] != null)
-            {
-                SpnWelcomeTxt.InnerText = "Welcome, " + Session["FirstName"].ToString() + "!";
-            }
+
         }
     }
 }

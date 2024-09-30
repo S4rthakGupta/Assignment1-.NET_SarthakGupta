@@ -11,10 +11,13 @@ namespace SarthakGupta_BookStore
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["FirstName"] != null)
-            {
-                lblWelcome.Text = "Welcome, " + Session["FirstName"].ToString() + "!";
-            }
+
+        }
+
+        protected void BtnLogin_Click(object sender, EventArgs e)
+        {
+            Session["FirstName"] = TxtFirstName.Text;
+            Response.Redirect("~/Default.aspx");
         }
     }
 }

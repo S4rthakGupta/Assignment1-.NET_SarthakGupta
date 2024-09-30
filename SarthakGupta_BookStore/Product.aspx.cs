@@ -31,6 +31,12 @@ namespace SarthakGupta_BookStore
             lblLongDescription.Text = selectedProduct.PublicationYear.ToString();
             lblUnitPrice.Text = selectedProduct.Price.ToString("c") + " each";
             imgProduct.ImageUrl = selectedProduct.ImageFile;
+
+            if (Session["FirstName"] != null)
+            {
+                SpnWelcomeTxtProducts.InnerText = Session["FirstName"].ToString() + "!";
+            }
+
         }
 
         protected Book GetSelectedProduct()
