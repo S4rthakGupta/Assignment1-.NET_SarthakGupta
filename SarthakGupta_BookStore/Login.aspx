@@ -16,33 +16,24 @@
         <div class="container-login">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8 col-sm-12">
-                    <!-- Card to hold the form -->
                     <div class="card mt-5 shadow-lg">
                         <div class="card-body p-5">
                             <!-- Header Section -->
                             <h3 class="text-center mb-4">Please Login</h3>
-
-                            <!-- First Name -->
                             <div class="form-group">
                                 <label for="firstName">First Name: <span class="required">*</span></label>
                                 <asp:TextBox ID="TxtFirstName" runat="server" CssClass="form-control" placeholder="Enter first name" />
                                 <span id="firstNameError" class="error text-danger"></span>
                             </div>
-
-                            <!-- Last Name -->
                             <div class="form-group">
                                 <label for="lastName">Last Name: <span class="required">*</span></label>
                                 <asp:TextBox ID="TxtLastName" runat="server" CssClass="form-control" placeholder="Enter last name" />
                                 <span id="lastNameError" class="error text-danger"></span>
                             </div>
-
-                            <!-- Buttons -->
                             <div class="d-flex justify-content-between mt-4">
                                 <asp:Button ID="BtnLogin" runat="server" Text="Login" CssClass="btn btn-primary px-4" OnClick="BtnLogin_Click" />
                                 <asp:Button ID="BtnCancel" runat="server" Text="Cancel" CssClass="btn btn-danger px-4" PostBackUrl="~/Cart.aspx" />
                             </div>
-
-                            <!-- Error Messages -->
                             <div id="errorMessages" class="text-danger mt-3"></div>
                         </div>
                     </div>
@@ -51,6 +42,7 @@
         </div>
     </form>
 
+    <!-- Adding Validations for Login as well. -->
     <script>
         // Function to clear any previous error messages
         function clearErrors() {

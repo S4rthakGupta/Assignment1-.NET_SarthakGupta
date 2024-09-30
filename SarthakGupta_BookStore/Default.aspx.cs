@@ -11,6 +11,7 @@ namespace SarthakGupta_BookStore
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // Adding a Welcome Message Dynamically using session variable.
             if (Session["FirstName"] != null)
             {
                 SpnWelcomeTxt.InnerText = "Welcome, " + Session["FirstName"].ToString() + "!";

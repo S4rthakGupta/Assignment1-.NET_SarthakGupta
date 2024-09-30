@@ -16,6 +16,7 @@ namespace SarthakGupta_BookStore
 
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
+            // Storing the First Name of the User in Session.
             Session["FirstName"] = TxtFirstName.Text;
             Response.Redirect("~/Default.aspx");
         }

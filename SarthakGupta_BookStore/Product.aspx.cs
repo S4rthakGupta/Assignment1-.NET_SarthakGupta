@@ -32,6 +32,7 @@ namespace SarthakGupta_BookStore
             lblUnitPrice.Text = selectedProduct.Price.ToString("c") + " each";
             imgProduct.ImageUrl = selectedProduct.ImageFile;
 
+            // Display the user's first name in the welcome message using session variable.
             if (Session["FirstName"] != null)
             {
                 SpnWelcomeTxtProducts.InnerText = Session["FirstName"].ToString() + "!";

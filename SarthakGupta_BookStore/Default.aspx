@@ -1,7 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Default.aspx.cs" Inherits="SarthakGupta_BookStore.Default" %>
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
+<!-- Giving Reference from Site.MasterPage. -->
 
+    <!-- Welcome Text Along with the name from Login will display here!. -->
     <div class="text-center">
         <h1><span id="SpnWelcomeTxt" runat="server"></span></h1>
     </div>
@@ -16,9 +18,6 @@
             </div>
         </div>
     </div>
-
-
-
 
     <!-- Adding a button which takes the user to the home page. -->
     <div class="btn-group-custom">
