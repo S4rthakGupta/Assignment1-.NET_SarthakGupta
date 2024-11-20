@@ -177,10 +177,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.aspx" />
+    <Compile Include="Admin.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs" />
     <Content Include="App_Data\SarthakGupta_BookStore.mdf" />
     <Content Include="App_Data\SarthakGupta_BookStore_log.ldf">
       <DependentUpon>SarthakGupta_BookStore.mdf</DependentUpon>
     </Content>
+    <Content Include="bin\SarthakGupta_BookStore.dll" />
+    <Content Include="bin\SarthakGupta_BookStore.pdb" />
     <Content Include="Checkout.aspx" />
     <Content Include="CSS\style.css" />
     <Content Include="Cart.aspx" />
@@ -224,13 +230,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.aspx.cs">
-      <DependentUpon>Admin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin.aspx.designer.cs">
-      <DependentUpon>Admin.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Checkout.aspx.cs">
       <DependentUpon>Checkout.aspx</DependentUpon>
@@ -256,6 +255,7 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
